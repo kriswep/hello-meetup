@@ -1,0 +1,5 @@
+type Meetup {
+  id: ID! @unique
+  name: String!
+  isAwesome: Boolean! @default(value: false)
+}

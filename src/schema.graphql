@@ -1,0 +1,12 @@
+# import Meetup from "./generated/prisma.graphql"
+
+type Query {
+  feed: [Meetup!]!
+  awesomeMeetups: [Meetup!]!
+  meetup(id: ID!): Meetup
+}
+
+type Mutation {
+  createMeetup(name: String!): Meetup
+  markAwesome(id: ID!): Meetup
+}
